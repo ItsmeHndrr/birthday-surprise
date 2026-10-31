@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#24113e" />
+  <meta name="description" content="Sebuah kejutan kecil yang dibuat dengan penuh cinta." />
+  <title>Birthday Surprise ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="brand-mark">✦</span> little<span>surprise</span></a>
+    <button class="music-btn" id="musicBtn" aria-label="Putar musik"><span id="musicIcon">♫</span><span id="musicLabel">Putar musik</span></button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="sparkle">✧</span> A LITTLE SURPRISE FOR YOU</div>
+        <h1>Hari ini,<br>semua tentang <em id="heroName">kamu</em>.</h1>
+        <p class="hero-sub">Ada sesuatu yang ingin aku tunjukkan. Siap untuk membuka kejutan kecil ini?</p>
+        <button class="primary-btn" id="startBtn">Buka kejutan <span>↗</span></button>
+        <div class="hero-note"><span class="tiny-heart">♥</span> Dibuat khusus dengan sepenuh hati</div>
+      </div>
+      <div class="hero-art">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="photo-frame main-frame">
+          <div class="photo-placeholder" id="heroPhoto"><span>✿</span><small>Foto spesial kamu</small></div>
+          <div class="frame-caption">a day to remember ♡</div>
+        </div>
+        <div class="floating-card card-top">♡ <span>you are special</span></div>
+        <div class="floating-card card-bottom"><span class="mini-star">✦</span> made with love</div>
+        <div class="deco-heart heart-one">♥</div><div class="deco-heart heart-two">♡</div>
+        <div class="deco-star star-one">✦</div><div class="deco-star star-two">✧</div>
+      </div>
+      <a class="scroll-hint" href="#message">SCROLL TO EXPLORE <span>↓</span></a>
+    </section>
+
+    <section class="section message-section" id="message">
+      <div class="section-kicker">01 / A SPECIAL DAY</div>
+      <div class="message-card">
+        <div class="message-decoration">✿</div>
+        <p class="script-line">To someone wonderful,</p>
+        <h2>Selamat ulang tahun,<br><em id="messageName">orang hebat!</em></h2>
+        <p class="message-text" id="birthdayMessage">Semoga hari-harimu selalu dipenuhi hal-hal baik, tawa yang tulus, dan orang-orang yang menyayangimu. Terima kasih sudah menjadi seseorang yang begitu berarti.</p>
+        <div class="signature">with love, <span id="senderName">someone who cares</span> ♡</div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="memories">
+      <div class="section-kicker">02 / LITTLE MEMORIES</div>
+      <div class="section-heading">
+        <div><h2>Potongan <em>kenangan.</em></h2><p>Beberapa momen kecil yang layak disimpan selamanya.</p></div>
+        <span class="gallery-count" id="photoCount">01 — 03</span>
+      </div>
+      <div class="gallery-grid" id="gallery">
+        <figure class="memory memory-tall"><div class="memory-placeholder placeholder-one"><span>✧</span><small>your favorite moment</small></div><figcaption>little moments, big memories <b>01</b></figcaption></figure>
+        <figure class="memory memory-offset"><div class="memory-placeholder placeholder-two"><span>♡</span><small>smile a little more</small></div><figcaption>keep this memory close <b>02</b></figcaption></figure>
+        <figure class="memory memory-small"><div class="memory-placeholder placeholder-three"><span>✿</span><small>one for the album</small></div><figcaption>the best is yet to come <b>03</b></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section countdown-section">
+      <div class="countdown-glow"></div>
+      <div class="section-kicker">03 / COUNTING THE GOOD THINGS</div>
+      <h2>Menuju hari yang <em>lebih indah.</em></h2>
+      <p class="countdown-sub" id="countdownTitle">Semoga tahun ini membawa banyak cerita baru.</p>
+      <div class="countdown" id="countdown">
+        <div><strong id="days">00</strong><span>HARI</span></div><i>:</i>
+        <div><strong id="hours">00</strong><span>JAM</span></div><i>:</i>
+        <div><strong id="minutes">00</strong><span>MENIT</span></div><i>:</i>
+        <div><strong id="seconds">00</strong><span>DETIK</span></div>
+      </div>
+      <p class="countdown-foot">Setiap hari adalah alasan baru untuk tersenyum ✦</p>
+    </section>
+
+    <section class="section wish-section">
+      <div class="section-kicker">04 / MAKE A WISH</div>
+      <div class="wish-box">
+        <div class="wish-icon">✧</div>
+        <h2>Jangan lupa <em>buat permintaan.</em></h2>
+        <p>Pejamkan mata sebentar. Tarik napas, pikirkan satu harapan terbaikmu, lalu tekan tombol di bawah.</p>
+        <button class="wish-btn" id="wishBtn">Aku sudah membuat permintaan <span>♡</span></button>
+        <div class="wish-response" id="wishResponse" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="final-section">
+      <div class="final-stars">✦　✧　⋆　♡　✧</div>
+      <p class="script-line">One last thing...</p>
+      <h2>Semoga bahagiamu<br><em>tidak pernah habis.</em></h2>
+      <p class="final-note">Terus bersinar dengan caramu sendiri. Dunia lebih indah karena ada kamu.</p>
+      <div class="final-heart">♡</div>
+      <span class="final-sign">HAPPY BIRTHDAY <b>✦</b></span>
+    </section>
+  </main>
+
+  <footer><span>made with <b>♥</b> and a little magic</span><span>© <span id="year"></span> little surprise</span></footer>
+
+  <button class="edit-fab" id="editOpen" title="Personalisasi website">✎ <span>Personalisasi</span></button>
+  <div class="modal-backdrop" id="editModal" aria-hidden="true">
+    <div class="edit-modal" role="dialog" aria-modal="true" aria-labelledby="editTitle">
+      <button class="modal-close" id="editClose" aria-label="Tutup">×</button>
+      <div class="section-kicker">MAKE IT YOURS</div>
+      <h2 id="editTitle">Personalisasi <em>kejutanmu.</em></h2>
+      <p class="edit-intro">Isi nama dan pesan, lalu pilih foto dari perangkatmu untuk melihat pratinjau.</p>
+      <form id="personalForm">
+        <label>Nama yang berulang tahun<input id="recipientInput" type="text" placeholder="Contoh: Aulia" maxlength="40"></label>
+        <label>Nama pengirim<input id="senderInput" type="text" placeholder="Contoh: Sahabatmu" maxlength="40"></label>
+        <label>Pesan ulang tahun<textarea id="messageInput" rows="3" maxlength="400" placeholder="Tulis pesan spesial..."></textarea></label>
+        <label>Tanggal ulang tahun<input id="dateInput" type="date"></label>
+        <label>Foto utama<input id="heroUpload" type="file" accept="image/*"></label>
+        <label>Foto kenangan (maksimal 3)<input id="galleryUpload" type="file" accept="image/*" multiple></label>
+        <div class="modal-actions"><button type="submit" class="primary-btn">Terapkan perubahan <span>✓</span></button><button type="button" class="reset-btn" id="resetBtn">Reset</button></div>
+      </form>
+      <p class="local-note">ⓘ Foto dan perubahan yang diunggah tersimpan di browser/perangkat ini. Untuk menampilkan foto yang sama ke semua pengunjung, ikuti petunjuk di README sebelum deploy.</p>
+    </div>
+  </div>
+  <audio id="birthdayAudio" loop preload="none"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
